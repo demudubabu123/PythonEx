@@ -14,30 +14,15 @@ class dbfunctions:
     def insertcustomer(self):
         a.insert_customer()
 
-        '''name=raw_input("enter cust name:")
-        cust_id=input("enter cust_id:")
-        plan=input("enter plan_id:")
-        amount=input("enter emount:")
-        payment_status=raw_input("enter payment status:")
-        contact=input("enter ph_number:")
-        cur.execute("insert into customer_1637249 values(%s,%s,%s,%s,%s,%s)",(cust_id,name,plan,amount,payment_status,contact))
-        cnx.commit()
-        print "\ncustomer details inserted successfully"'''
     def viewcustomer(self):
         b.view_customer()
-        '''cur.execute("select * from customer_1637249")
-        a=cur.fetchall()
-        for i in a:
+
             
-            print i'''
+
     def updatestatus(self):
         c.update_status()
 
-        '''idd=input("Enter Customer ID:")
-        status=raw_input("payment status?")
-        cur.execute("update customer_1637249 set payment_status=%s where custid=%s",(status,idd))
-        cnx.commit()
-        print "Status updated successfully"'''
+
     def viewplans(self):
         d.view_plans()
     def planwise(self):
