@@ -1,5 +1,8 @@
 import pyodbc as mc
-cnx=mc.connect('Driver={SQL Server};Server=localhost;Database=master')
+cnx = mc.connect("Driver={SQL Server};"
+                 "Server=DESKTOP-SFPRKLP\SQLEXPRESS;"
+                 "Database=postpaid;"
+                 )
 cur=cnx.cursor()
 class update_stat:
     def update_status(self):
