@@ -16,7 +16,7 @@ class update_stat:
             if i==idd:
              break
         else:
-         print("entered customer_id is not in the list,please enter another customer_id")
+         print("entered customer_id is not in the list,please enter another customer_id or create new account by adding account details")
         cur.execute("select * from plans")
         print("plan details","========", sep="\n")
         a=cur.fetchall()
